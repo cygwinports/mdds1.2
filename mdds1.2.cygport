@@ -1,0 +1,18 @@
+NAME="mdds1.2"
+VERSION=1.2.1
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="C++ multi-dimensional data structure template library"
+DESCRIPTION="A C++ template library providing a collection of multi-dimensional
+data structure and indexing algorithms."
+HOMEPAGE="https://gitlab.com/mdds/mdds"
+SRC_URI="http://kohei.us/files/mdds/src/mdds-${VERSION}.tar.bz2"
+SRC_DIR="mdds-${VERSION}"
+
+ARCH=noarch
+
+PKG_NAMES="${NAME}-devel"
+mdds1_2_devel_REQUIRES="libboost-devel"
+mdds1_2_devel_CONTENTS="usr/"
+
+MAKEOPTS+=" docsdir=\$(docdir)"
